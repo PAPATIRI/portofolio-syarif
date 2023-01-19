@@ -1,13 +1,28 @@
-export const icons = [
+export const menus = [
   {
-    id: "icon-1",
-    image: "/moonlight.png",
-    name: "moonlight",
+    id: "menu-home",
+    name: "hi",
+    path: "/",
   },
   {
-    id: "icon-2",
-    image: "/sun.png",
-    name: "sun",
+    id: "menu-tentang",
+    name: "who am i?",
+    path: "/about",
+  },
+  {
+    id: "menu-skills",
+    name: "project",
+    path: "/skill",
+  },
+  {
+    id: "menu-kontak",
+    name: "contact",
+    path: "/contact",
+  },
+  {
+    id: "menu-blog",
+    name: "blog",
+    path: "/blog",
   },
 ];
 

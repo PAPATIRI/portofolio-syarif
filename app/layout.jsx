@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Poppins } from "@next/font/google";
+import TopBar from "@/components/TopBar";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,7 +15,12 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body className="flex flex-col items-center bg-[#fefefe] ">
+        <div className="w-full flex flex-col items-center h-screen w-[1072px] max-w-[1072px]">
+          <TopBar />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

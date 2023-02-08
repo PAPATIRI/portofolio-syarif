@@ -6,12 +6,12 @@ export const menus = [
   },
   {
     id: "menu-tentang",
-    name: "who am i?",
+    name: "who am i",
     path: "/about",
   },
   {
     id: "menu-skills",
-    name: "project",
+    name: "skill & project",
     path: "/skill",
   },
   {
@@ -31,26 +31,31 @@ export const socialMedia = [
     id: "sosmed-1",
     name: "github",
     icon: "/github.png",
+    url: "https://github.com/PAPATIRI",
   },
   {
     id: "sosmed-2",
     name: "linkedln",
     icon: "/linkedin.png",
+    url: "https://www.linkedin.com/in/syarif-taufik-hidayat-860324161/",
   },
   {
     id: "sosmed-3",
     name: "twitter",
     icon: "/twitter.png",
+    url: "https://twitter.com/Syarif_T_H",
   },
   {
     id: "sosmed-4",
     name: "facebook",
     icon: "/facebook.png",
+    url: "https://web.facebook.com/sedapp.bang/",
   },
   {
     id: "sosmed-5",
     name: "discord",
     icon: "/discord.png",
+    url: "https://discord.gg/M9e6sa2Z6F",
   },
 ];
 

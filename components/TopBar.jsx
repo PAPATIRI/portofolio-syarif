@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { HiBars3BottomRight, HiSun, HiMoon } from "react-icons/hi2";
+import { HiBars3BottomRight } from "react-icons/hi2";
 import { menus } from "../constants";
+import SwitcherDarkMode from "./SwitcherDarkMode";
 
 const TopBar = () => {
   const router = usePathname();
@@ -10,7 +11,7 @@ const TopBar = () => {
   return (
     <div className="w-full flex items-center justify-between mt-[50px]">
       <Link href="/">
-        <h1 className="text-xl font-bold text-milk-choco cursor-pointer">
+        <h1 className="text-xl font-bold text-milk-choco dark:text-milk-white cursor-pointer">
           Syarif<span className="text-milk-cyan">.</span>
         </h1>
       </Link>
@@ -20,16 +21,16 @@ const TopBar = () => {
           <Link
             href={item.path}
             key={item.id}
-            className={`text-lg font-medium text-milk-coffe ${
-              router === item.path && "text-milk-cyan font-bold"
+            className={`text-lg font-medium text-milk-coffe dark:text-milk-white ${
+              router === item.path &&
+              "text-milk-cyan dark:text-milk-cyan font-bold"
             }`}
           >
             {item.name}
           </Link>
         ))}
       </div>
-      {/* <HiSun className="h-8 w-8 text-milk-coffe cursor-pointer" /> */}
-      <HiMoon className="h-8 w-8 text-milk-coffe cursor-pointer" />
+      <SwitcherDarkMode />
     </div>
   );
 };

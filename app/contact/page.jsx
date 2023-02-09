@@ -5,8 +5,8 @@ import { socialMedia } from "../../constants";
 const Contact = () => {
   return (
     <div className="w-full">
-      <h1 className="text-5xl text-milk-cyan font-medium mt-10">contact.</h1>
-      <div className="flex items-end justify-between gap-4 mt-10">
+      <h1 className="text-4xl text-milk-cyan font-medium mt-10">contact.</h1>
+      <div className="flex items-end justify-between gap-4 mt-5">
         <div className="flex-1 pr-5">
           <p className="text-milk-coffe dark:text-milk-white text-lg">
             ada ide dan ingin berkolaborasi, lets get in touch and make the

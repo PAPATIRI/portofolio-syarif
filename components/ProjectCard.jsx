@@ -4,7 +4,7 @@ import Link from "next/link";
 const ProjectCard = ({ item }) => {
   return (
     <Link
-      href={`/skill/project/${item.attributes.slug}`}
+      href={`/project/${item.attributes.slug}`}
       className="p-4 hover:shadow-lg rounded-lg cursor-pointer"
     >
       <Image

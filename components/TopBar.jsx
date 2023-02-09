@@ -9,7 +9,7 @@ const TopBar = () => {
   const router = usePathname();
 
   return (
-    <div className="w-full flex items-center justify-between mt-[50px]">
+    <div className="fixed top-0 w-[1072px] max-w-[1072px] flex items-center justify-between pt-[50px] pb-4 bg-white dark:bg-milk-coffe z-50">
       <Link href="/">
         <h1 className="text-xl font-bold text-milk-choco dark:text-milk-white cursor-pointer">
           Syarif<span className="text-milk-cyan">.</span>

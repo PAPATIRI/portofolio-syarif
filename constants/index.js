@@ -10,9 +10,9 @@ export const menus = [
     path: "/about",
   },
   {
-    id: "menu-skills",
-    name: "skill & project",
-    path: "/skill",
+    id: "menu-project",
+    name: "projects",
+    path: "/project",
   },
   {
     id: "menu-kontak",

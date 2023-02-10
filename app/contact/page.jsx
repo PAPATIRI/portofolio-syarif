@@ -1,4 +1,3 @@
-"use client";
 import FormEmail from "@/components/FormEmail";
 import TopBar from "@/components/TopBar";
 import Image from "next/image";

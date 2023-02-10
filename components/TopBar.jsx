@@ -5,7 +5,7 @@ import { HiBars3BottomRight } from "react-icons/hi2";
 import { menus } from "../constants";
 import SwitcherDarkMode from "./SwitcherDarkMode";
 
-const TopBar = () => {
+const TopBar = ({ type }) => {
   const router = usePathname();
 
   return (
@@ -16,7 +16,11 @@ const TopBar = () => {
         </h1>
       </Link>
 
-      <div className="flex items-center gap-12">
+      <div
+        className={`flex items-center gap-12 ${
+          type === "detailpage" && "hidden"
+        }`}
+      >
         {menus?.map((item) => (
           <Link
             href={item.path}

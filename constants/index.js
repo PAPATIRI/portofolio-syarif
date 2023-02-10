@@ -62,38 +62,30 @@ export const socialMedia = [
 export const skills = [
   {
     id: "skill-1",
-    name: "HTML & CSS",
-  },
-  {
-    id: "skill-2",
     name: "React js",
   },
   {
-    id: "skill-3",
+    id: "skill-2",
     name: "Next js",
   },
   {
-    id: "skill-4",
-    name: "Express js",
-  },
-  {
-    id: "skill-5",
+    id: "skill-3",
     name: "Tailwindcss",
   },
   {
+    id: "skill-4",
+    name: "Headless CMS Strapi",
+  },
+  {
+    id: "skill-5",
+    name: "Github",
+  },
+  {
     id: "skill-6",
-    name: "MYSQL",
-  },
-  {
-    id: "skill-7",
-    name: "Git",
-  },
-  {
-    id: "skill-8",
     name: "Figma",
   },
   {
-    id: "skill-9",
+    id: "skill-7",
     name: "Wordpress",
   },
 ];

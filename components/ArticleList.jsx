@@ -10,7 +10,7 @@ const ArticleList = ({ loading, articles }) => {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 mt-10">
+    <>
       {loading ? (
         <LoadingSkeleton type="post" />
       ) : (
@@ -20,13 +20,12 @@ const ArticleList = ({ loading, articles }) => {
             key={article.attributes.slug}
             className="w-fit p-4 hover:shadow-md cursor-pointer rounded-lg"
           >
-            <div className="object-fit h-[120px] w-fit overflow-hidden">
+            <div className="object-fit h-[120px] w-full rounded mb-4 shadow overflow-hidden">
               <Image
                 src={`https://blog.zanccode.site${article.attributes.image.data.attributes.url}`}
                 alt="post image"
                 width={350}
                 height={100}
-                className="rounded mb-4"
               />
             </div>
             <div className="mt-4">
@@ -43,7 +42,7 @@ const ArticleList = ({ loading, articles }) => {
           </Link>
         ))
       )}
-    </div>
+    </>
   );
 };
 

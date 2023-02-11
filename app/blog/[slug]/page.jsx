@@ -27,12 +27,12 @@ const DetailArticle = (article) => {
   return (
     <>
       <TopBar type="detailpage" />
-      <div className="w-[600px]">
+      <div className="w-full md:w-[600px]">
         <Link
           href="/blog"
-          className="flex items-center font-normal gap-2 text-lg text-milk-choco dark:text-milk-white mb-8 hover:text-milk-choco hover:font-medium transition-all duration-400"
+          className="flex items-center font-normal gap-2 text-base lg:text-lg text-milk-choco dark:text-milk-white mb-8 hover:text-milk-choco hover:font-medium transition-all duration-400"
         >
-          <AiOutlineArrowLeft />
+          <AiOutlineArrowLeft size={14} />
           kembali
         </Link>
         {loading ? (
@@ -40,10 +40,10 @@ const DetailArticle = (article) => {
         ) : (
           dataArticle.map((data) => (
             <div key={data.attributes.slug}>
-              <h1 className="text-[32px] font-medium text-milk-cyan mb-2">
+              <h1 className="text-xl lg:text-3xl text-center lg:text-left font-medium text-milk-cyan mb-2">
                 {data.attributes.title}
               </h1>
-              <div className="h-[180px] w-full object-cover rounded-lg overflow-hidden mb-10">
+              <div className="h-full md:h-[180px] w-full object-cover rounded-lg overflow-hidden mb-10">
                 <Image
                   src={`https://blog.zanccode.site${data.attributes.image.data.attributes.url}`}
                   alt="image article"
@@ -52,7 +52,7 @@ const DetailArticle = (article) => {
                 />
               </div>
               <div
-                className="text-lg leading-8 text-milk-coffe dark:text-milk-white"
+                className="text-base lg:text-lg leading-7 lg:leading-8 leading-8 text-milk-coffe dark:text-milk-white"
                 dangerouslySetInnerHTML={{ __html: data.attributes.content }}
               ></div>
             </div>

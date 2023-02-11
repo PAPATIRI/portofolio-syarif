@@ -8,20 +8,22 @@ const Contact = () => {
     <>
       <TopBar />
       <main className="w-full">
-        <h1 className="text-4xl text-milk-cyan font-medium mt-10">contact.</h1>
-        <div className="flex items-end justify-between gap-4 mt-5">
-          <div className="flex-1 pr-5">
-            <p className="text-milk-coffe dark:text-milk-white text-lg">
+        <h1 className="text-2xl lg:text-4xl text-milk-cyan font-medium lg:mt-10">
+          contact.
+        </h1>
+        <div className="flex flex-col md:flex-row lg:items-end justify-between gap-4 mt-5">
+          <div className="flex-1 lg:pr-5">
+            <p className="text-milk-coffe dark:text-milk-white text-base lg:text-lg leading-7 lg:leading-8">
               ada ide dan ingin berkolaborasi, lets get in touch and make the
               ideas come true
             </p>
             <FormEmail />
           </div>
-          <div className="flex-1 pl-5">
+          <div className="flex-1 mt-8 lg:mt-0 lg:pl-5">
             <h2 className="text-2xl text-milk-coffe dark:text-milk-white font-medium mb-5">
               sosial media.
             </h2>
-            <p className="text-lg text-milk-coffe dark:text-milk-white">
+            <p className="text-base lg:text-lg leading-7 lg:leading-8 text-milk-coffe dark:text-milk-white">
               saya aktif di beberapa sosial media, jangan sungkan berbagi
               pengalaman dengan saya.
             </p>

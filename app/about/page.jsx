@@ -5,12 +5,12 @@ const About = () => {
   return (
     <>
       <TopBar />
-      <div className="flex gap-2 w-full h-full self-start">
-        <div className="flex-1">
-          <h1 className="text-4xl font-medium text-milk-choco dark:text-white mt-10">
+      <main className="flex flex-col lg:flex-row gap-2 w-full h-full self-start">
+        <div className="lg:flex-1">
+          <h1 className="text-2xl lg:text-4xl font-medium text-milk-choco dark:text-white lg:mt-10">
             tentang <span className="text-milk-cyan">Saya.</span>
           </h1>
-          <p className="text-milk-coffe dark:text-milk-white text-lg mt-5 leading-8">
+          <p className="text-milk-coffe dark:text-milk-white text-base lg:text-lg mt-5 leading-7 lg:leading-8">
             Fresh graduate dari <b>Universitas Ahmad Dahlan</b> (UAD)
             Yogyakarta. berfokus pada web development khususnya frontend
             development.
@@ -21,7 +21,7 @@ const About = () => {
             “programmer tampan & intelek”.
           </p>
         </div>
-        <div className="object-cover self-center flex-2">
+        <div className="object-cover self-center lg:flex-2">
           <Image
             src="/blob-profile.png"
             alt="blob profile"
@@ -29,7 +29,7 @@ const About = () => {
             height={452}
           />
         </div>
-      </div>
+      </main>
     </>
   );
 };

@@ -22,18 +22,20 @@ const Blog = () => {
   return (
     <>
       <TopBar />
-      <main className="w-full relative h-full">
-        <h1 className="text-4xl text-milk-cyan font-medium mt-10">blog.</h1>
-        <p className="text-lg text-milk-coffe dark:text-milk-white mt-5 w-[80%]">
+      <main className="h-full">
+        <h1 className="text-2xl lg:text-4xl text-milk-cyan font-medium lg:mt-10">
+          blog.
+        </h1>
+        <p className="text-base lg:text-lg leading-7 lg:leading-8 text-milk-coffe dark:text-milk-white mt-5 lg:w-[80%]">
           saya juga aktif menulis artikle di blog pribadi saya. saya menulis
           mengenai pengalaman selama perjalanan saya menyelami lautan software
           engineering. mulai dari frontend development, backend development, dan
           tools-tools yang saya gunakan.
         </p>
-        <div className="flex flex-wrap gap-2 mt-5">
+        <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-10 lg:mb-24 lg:mt-5">
           <ArticleList loading={loading} articles={articles} />
         </div>
-        <div className="absolute bottom-40">
+        <div className="flex justify-center lg:justify-start">
           <Button
             href="https://zanccode.vercel.app"
             type="full"

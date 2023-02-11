@@ -4,7 +4,7 @@ import TopBar from "@/components/TopBar";
 import { skills } from "@/constants";
 import { useEffect, useState } from "react";
 
-const Skill = () => {
+const Project = () => {
   const [projectData, setProjectData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -24,8 +24,10 @@ const Skill = () => {
     <>
       <TopBar />
       <main className="w-full">
-        <h1 className="text-4xl text-milk-cyan font-medium mt-10">projects.</h1>
-        <p className="text-lg text-milk-coffe dark:text-milk-white mt-5 w-[80%]">
+        <h1 className="text-2xl lg:text-4xl text-milk-cyan font-medium lg:mt-10">
+          projects.
+        </h1>
+        <p className="text-base lg:text-lg text-milk-coffe dark:text-milk-white leading-7 lg:leading-8 mt-5 w-full lg:w-[80%]">
           saya telah membangun beberapa project pribadi untuk mengasah skill
           yang telah saya pelajari. stack dan tools yang saya gunakan untuk
           membangun project-project ini menggunakan
@@ -38,7 +40,7 @@ const Skill = () => {
           dan <b className="dark:text-white">Neovim</b> sebagai code editor
           saya.
         </p>
-        <div className="flex flex-wrap gap-2 mt-5">
+        <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-5 mb-10 lg:mb-0">
           <ProjectList loading={loading} projects={projectData} />
         </div>
       </main>
@@ -46,4 +48,4 @@ const Skill = () => {
   );
 };
 
-export default Skill;
+export default Project;

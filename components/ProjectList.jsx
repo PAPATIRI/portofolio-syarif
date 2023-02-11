@@ -14,13 +14,14 @@ const ProjectList = ({ loading, projects }) => {
             href={`/project/${item.attributes.slug}`}
             className="p-4 hover:shadow-lg rounded-lg cursor-pointer"
           >
-            <Image
-              src={`https://blog.zanccode.site${item.attributes.image.data.attributes.url}`}
-              alt="project image"
-              height={200}
-              width={350}
-              className="rounded mb-4"
-            />
+            <div className="rounded shadow h-[200px] overflow-hidden w-full object-cover mb-4">
+              <Image
+                src={`https://blog.zanccode.site${item.attributes.image.data.attributes.url}`}
+                alt="project image"
+                height={200}
+                width={350}
+              />
+            </div>
             <p className="text-lg text-milk-coffe dark:text-milk-white font-medium text-center">
               {item.attributes.name}
             </p>

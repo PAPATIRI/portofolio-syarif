@@ -1,5 +1,6 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import SyarifPantai from "../../public/blob-profile.png";
 
 const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
@@ -25,10 +26,11 @@ const About = () => {
         </div>
         <div className="object-cover self-center lg:flex-2">
           <Image
-            src="/blob-profile.png"
+            src={SyarifPantai}
             alt="blob profile"
             width={500}
             height={452}
+            placeholder="blur"
           />
         </div>
       </main>

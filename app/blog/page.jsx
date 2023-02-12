@@ -1,8 +1,10 @@
 "use client";
 import ArticleList from "@/components/ArticleList";
 import Button from "@/components/Button";
-import TopBar from "@/components/TopBar";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
 const Blog = () => {
   const [articles, setArticles] = useState([]);

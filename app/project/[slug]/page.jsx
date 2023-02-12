@@ -2,11 +2,13 @@
 import Button from "@/components/Button";
 import LoadingSkeletonDetailPage from "@/components/LoadingSkeletonDetailPage";
 import TechBubble from "@/components/TechBubble";
-import TopBar from "@/components/TopBar";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import dynamic from "next/dynamic";
+
+const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
 const Project = (item) => {
   const slug = item.params.slug;

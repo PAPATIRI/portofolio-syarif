@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import SyarifPicture from "../public/syarif.png";
 
 const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <>
       <TopBar />
-      <main className="flex flex-col md:flex-row relative w-full h-fit pb-20">
+      <main className="flex flex-col md:flex-row relative w-full h-full pb-20">
         <div className="mb-5 md:mb-0 md:flex-1 self-center">
           <div className="mb-10 lg:mb-8">
             <h1 className="text-2xl text-center md:text-left lg:text-3xl font-medium text-milk-coffe dark:text-milk-white">
@@ -30,17 +31,23 @@ export default function Home() {
           </div>
           <p className="text-base lg:text-lg text-center md:text-left leading-7 lg:leading-8 text-milk-coffe dark:text-milk-white">
             Aiming to become a{" "}
-            <span className="font-bold text-milk-cyan">
+            <span className="font-bold text-milk-coffe dark:text-milk-white">
               Frontend Developer Specialist.
             </span>{" "}
             maybe not yet but definitely will be. as the saying goes{" "}
-            <span className="font-bold text-milk-cyan">
+            <span className="font-bold text-milk-coffe dark:text-milk-white">
               &quot;man jadda wa jada&quot;
             </span>
           </p>
         </div>
-        <div className="self-center h-[350px] w-[300px] md:h-[600px] md:w-[400px] overflow-hidden">
-          <Image src="/syarif.png" alt="profile" width={400} height={600} />
+        <div className="rounded-lg self-center h-[350px] w-[300px] md:h-[600px] md:w-[400px] object-cover overflow-hidden">
+          <Image
+            src={SyarifPicture}
+            alt="profile"
+            width={400}
+            height={600}
+            placeholder="blur"
+          />
         </div>
       </main>
     </>

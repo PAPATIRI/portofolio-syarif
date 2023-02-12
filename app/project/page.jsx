@@ -1,8 +1,10 @@
 "use client";
 import ProjectList from "@/components/ProjectList";
-import TopBar from "@/components/TopBar";
 import { skills } from "@/constants";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
 const Project = () => {
   const [projectData, setProjectData] = useState([]);

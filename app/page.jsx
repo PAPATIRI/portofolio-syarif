@@ -1,5 +1,8 @@
-import TopBar from "@/components/TopBar";
+"use client";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+
+const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
 export default function Home() {
   return (

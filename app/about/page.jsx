@@ -1,5 +1,7 @@
-import TopBar from "@/components/TopBar";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
 const About = () => {
   return (

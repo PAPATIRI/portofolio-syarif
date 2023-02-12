@@ -14,15 +14,13 @@ const SwitcherDarkMode = () => {
   };
 
   return (
-    <div>
-      <DarkModeSwitch
-        sunColor="#393E46"
-        moonColor="#EEEEEE"
-        checked={darkMode}
-        onChange={toggleDarkMode}
-        size={24}
-      />
-    </div>
+    <DarkModeSwitch
+      sunColor="#393E46"
+      moonColor="#EEEEEE"
+      checked={darkMode}
+      onChange={toggleDarkMode}
+      size={24}
+    />
   );
 };
 

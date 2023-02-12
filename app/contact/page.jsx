@@ -1,7 +1,9 @@
 import FormEmail from "@/components/FormEmail";
-import TopBar from "@/components/TopBar";
 import Image from "next/image";
 import { socialMedia } from "../../constants";
+import dynamic from "next/dynamic";
+
+const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
 const Contact = () => {
   return (

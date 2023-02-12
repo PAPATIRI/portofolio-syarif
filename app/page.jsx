@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <>
       <TopBar />
-      <main className="flex flex-col md:flex-row relative w-full h-full pb-20">
+      <main className="flex flex-col md:flex-row relative w-full h-fit pb-20">
         <div className="mb-5 md:mb-0 md:flex-1 self-center">
           <div className="mb-10 lg:mb-8">
-            <h1 className="text-2xl text-center md:text-left lg:text-3xl font-bold text-milk-coffe dark:text-milk-white">
+            <h1 className="text-2xl text-center md:text-left lg:text-3xl font-medium text-milk-coffe dark:text-milk-white">
               Hai, I&apos;m Syarif.
             </h1>
           </div>
-          <div className="lg:-rotate-[20deg] -ml-0 mb-2 lg:-ml-8 lg:-mb-14 bg-milk-white/80 dark:bg-milk-choco/80 shadow-md w-full md:w-fit px-4 py-1">
+          <div className="lg:-rotate-[20deg] -ml-0 mb-2 lg:-ml-8 lg:-mb-14 bg-milk-coffe/80 dark:bg-milk-choco/80 shadow-md w-full md:w-fit px-4 py-1">
             <p className="text-lg lg:text-xl text-center lg:text-left text-milk-cyan italic font-medium">
               An Ordinary
             </p>
@@ -30,11 +30,11 @@ export default function Home() {
           </div>
           <p className="text-base lg:text-lg text-center md:text-left leading-7 lg:leading-8 text-milk-coffe dark:text-milk-white">
             Aiming to become a{" "}
-            <span className="font-bold text-choco dark:text-white">
+            <span className="font-bold text-milk-cyan">
               Frontend Developer Specialist.
             </span>{" "}
             maybe not yet but definitely will be. as the saying goes{" "}
-            <span className="font-bold text-choco dark:text-white underline underline-offset-8">
+            <span className="font-bold text-milk-cyan">
               &quot;man jadda wa jada&quot;
             </span>
           </p>

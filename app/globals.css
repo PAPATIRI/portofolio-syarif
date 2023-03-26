@@ -5,3 +5,17 @@
 .stroke-text {
   -webkit-text-stroke: 2px #eee;
 }
+
+pre {
+  background-color: rgba(34, 40, 49, 0.3);
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 10px 0;
+  overflow-x: auto;
+}
+
+figcaption {
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
+}

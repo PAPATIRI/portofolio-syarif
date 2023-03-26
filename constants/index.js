@@ -1,28 +1,56 @@
+export const currentlyLearning = [
+  {
+    id: 1,
+    subject: "typescript",
+    img: "/my-busy-img/typescript.png",
+  },
+  {
+    id: 2,
+    subject: "next js",
+    img: "/my-busy-img/nextjs-logo.png",
+  },
+  {
+    id: 3,
+    subject: "prisma",
+    img: "/my-busy-img/prisma.png",
+  },
+  {
+    id: 4,
+    subject: "express js",
+    img: "/my-busy-img/expressjs-logo.png",
+  },
+  {
+    id: 5,
+    subject: "mysql",
+    img: "/my-busy-img/mysql-logo.png",
+  },
+];
+
 export const menus = [
   {
     id: "menu-home",
-    name: "hi",
+    name: "halo",
     path: "/",
   },
   {
     id: "menu-tentang",
-    name: "who am i",
-    path: "/about",
+    name: "this is me",
+    path: "/this-is-me",
   },
   {
     id: "menu-project",
-    name: "projects",
-    path: "/project",
+    name: "my projects",
+    path: "/my-projects",
   },
   {
-    id: "menu-kontak",
-    name: "contact",
-    path: "/contact",
+    id: "menu-currently",
+    name: "my busy",
+    path: "/my-busy",
   },
   {
     id: "menu-blog",
-    name: "blog",
-    path: "/blog",
+    name: "my notes",
+    path: "/my-notes",
   },
 ];
 

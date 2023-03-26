@@ -32,8 +32,7 @@ const TopBar = ({ type }) => {
             key={item.id}
             href={item.path}
             className={`text-base lg:text-lg font-medium text-milk-coffe dark:text-milk-white ${
-              router === item.path &&
-              "text-milk-cyan dark:text-milk-cyan font-bold"
+              router === item.path && "text-milk-cyan dark:text-milk-cyan"
             }`}
           >
             {item.name}

@@ -1,33 +1,22 @@
-"use client";
 import ProjectList from "@/components/ProjectList";
 import { skills } from "@/constants";
-import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
-const Project = () => {
-  const [projectData, setProjectData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  async function getData() {
-    await fetch("https://blog.zanccode.site/api/projects?populate=*")
-      .then((res) => res.json())
-      .then((data) => setProjectData(data.data));
-
-    setLoading(false);
-  }
-
-  useEffect(() => {
-    getData();
-  }, []);
+async function getProjects() {
+  const res = await fetch("https://blog.zanccode.site/api/projects?populate=*");
+  return res.json();
+}
+const Project = async () => {
+  const projects = await getProjects();
 
   return (
     <>
       <TopBar />
       <main className="w-full">
-        <h1 className="text-2xl lg:text-4xl text-milk-cyan font-medium lg:mt-10">
-          projects.
+        <h1 className="text-2xl lg:text-4xl text-milk-coffe dark:text-white font-medium lg:mt-10">
+          my <span className="text-milk-cyan">projects.</span>
         </h1>
         <p className="text-base lg:text-lg text-milk-coffe dark:text-milk-white leading-7 lg:leading-8 mt-5 w-full lg:w-[80%]">
           saya telah membangun beberapa project pribadi untuk mengasah skill
@@ -39,11 +28,11 @@ const Project = () => {
               {item.name},{" "}
             </span>
           ))}
-          dan <b className="dark:text-white">Neovim</b> sebagai code editor
-          saya.
+          dan <b className="dark:text-white">Vim/Neovim dan Vs Code</b> sebagai
+          code editor saya.
         </p>
         <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-5 mb-10 lg:mb-0">
-          <ProjectList loading={loading} projects={projectData} />
+          <ProjectList projects={projects.data} />
         </div>
       </main>
     </>

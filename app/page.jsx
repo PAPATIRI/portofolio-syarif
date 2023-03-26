@@ -32,7 +32,7 @@ export default function Home() {
           <p className="text-base lg:text-lg text-center md:text-left leading-7 lg:leading-8 text-milk-coffe dark:text-milk-white">
             Aiming to become a{" "}
             <span className="font-bold text-milk-coffe dark:text-milk-white">
-              Frontend Developer Specialist.
+              Fullstack Developer (T-shaped developer).
             </span>{" "}
             maybe not yet but definitely will be. as the saying goes{" "}
             <span className="font-bold text-milk-coffe dark:text-milk-white">

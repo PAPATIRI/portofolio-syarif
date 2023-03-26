@@ -10,10 +10,7 @@ const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 async function getDetailProject(item) {
   const slug = item.params.slug;
   const res = await fetch(
-    `https://blog.zanccode.site/api/projects?populate=*&filters[slug]=${slug}`,
-    {
-      cache: "no-store",
-    }
+    `https://blog.zanccode.site/api/projects?populate=*&filters[slug]=${slug}`
   );
   return res.json();
 }

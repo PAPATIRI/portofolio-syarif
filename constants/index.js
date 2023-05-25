@@ -34,23 +34,23 @@ export const menus = [
   },
   {
     id: "menu-tentang",
-    name: "this is me",
-    path: "/this-is-me",
+    name: "about",
+    path: "/about",
   },
   {
     id: "menu-project",
-    name: "my projects",
-    path: "/my-projects",
-  },
-  {
-    id: "menu-currently",
-    name: "my busy",
-    path: "/my-busy",
+    name: "projects",
+    path: "/projects",
   },
   {
     id: "menu-blog",
-    name: "my notes",
-    path: "/my-notes",
+    name: "notes",
+    path: "/notes",
+  },
+  {
+    id: "menu-currently",
+    name: "etc.",
+    path: "/etc",
   },
 ];
 

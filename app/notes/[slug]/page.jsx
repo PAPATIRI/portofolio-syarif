@@ -22,7 +22,7 @@ export default async function DetailArticle(article) {
       <TopBar type="detailpage" />
       <div className="w-full md:w-[600px] pb-16">
         <Link
-          href="/my-notes"
+          href="/notes"
           className="flex items-center font-normal gap-2 text-base lg:text-lg text-milk-choco dark:text-milk-white mb-8 hover:text-milk-choco hover:font-medium transition-all duration-400"
         >
           <AiOutlineArrowLeft size={14} />

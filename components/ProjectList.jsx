@@ -7,7 +7,7 @@ const ProjectList = ({ projects }) => {
       {projects.map((item) => (
         <Link
           key={item.attributes.slug}
-          href={`/my-projects/${item.attributes.slug}`}
+          href={`/projects/${item.attributes.slug}`}
           className="p-4 hover:shadow-lg rounded-lg cursor-pointer"
         >
           <div className="rounded h-[200px] overflow-hidden w-[300px] object-cover mb-4">

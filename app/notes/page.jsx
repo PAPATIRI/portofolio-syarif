@@ -19,7 +19,7 @@ export default async function Blog() {
       <TopBar />
       <main className="h-full">
         <h1 className="text-2xl lg:text-4xl text-milk-coffe dark:text-white font-medium lg:mt-10">
-          my <span className="text-milk-cyan">blog.</span>
+          my <span className="text-milk-cyan">notes.</span>
         </h1>
         <p className="text-base lg:text-lg leading-7 lg:leading-8 text-milk-coffe dark:text-milk-white mt-5 lg:w-[80%]">
           saya juga aktif menulis artikle di blog pribadi saya. saya menulis

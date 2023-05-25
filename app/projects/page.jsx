@@ -5,7 +5,9 @@ import dynamic from "next/dynamic";
 const TopBar = dynamic(() => import("@/components/TopBar"), { ssr: false });
 
 async function getProjects() {
-  const res = await fetch("https://blog.zanccode.site/api/projects?populate=*");
+  const res = await fetch(
+    "https://blog.zanccode.site/api/projects?populate=*&sort=createdAt:desc"
+  );
   return res.json();
 }
 const Project = async () => {

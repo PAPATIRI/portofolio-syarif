@@ -11,7 +11,7 @@ const Contact = () => {
       <TopBar />
       <main className="w-full">
         <h1 className="text-2xl text-milk-coffe dark:text-white lg:text-4xl font-medium lg:mt-10">
-          my <span className="text-milk-cyan">busy.</span>
+          my <span className="text-milk-cyan">etc.</span>
         </h1>
         <div className="flex flex-col md:flex-row justify-between gap-4 mt-10">
           <div className="flex-1 mb-10 md:mb-0 lg:pr-5">
@@ -49,10 +49,6 @@ const Contact = () => {
               <h2 className="text-2xl text-milk-coffe dark:text-milk-white font-medium mb-2">
                 currently reading
               </h2>
-              <p className="text-base lg:text-lg leading-7 lg:leading-8 text-milk-coffe dark:text-milk-white">
-                membaca buku untuk mengistirahatkan mata yang lebih sering
-                menatap layar laptop dibandingkan menatap indahnya senyumanmu.
-              </p>
               <div className="h-[250px] w-[250px] self-center md:self-start rounded-lg overflow-hidden mt-3">
                 <Image
                   src="/my-busy-img/reading-book.jpg"

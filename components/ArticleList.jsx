@@ -13,7 +13,7 @@ const ArticleList = ({ articles }) => {
     <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-10 mt-4 lg:mb-24 lg:mt-5">
       {articles.map((article) => (
         <Link
-          href={`/my-notes/${article.attributes.slug}`}
+          href={`/notes/${article.attributes.slug}`}
           key={article.attributes.slug}
           className="w-[284px] p-4 hover:shadow-md cursor-pointer rounded-lg"
         >

@@ -23,7 +23,7 @@ export default async function ProjectDetail(item) {
       <TopBar type="detailpage" />
       <div className="w-full md:w-fit">
         <Link
-          href="/my-projects"
+          href="/projects"
           className="flex self-start items-center gap-2 text-base lg:text-lg font-normal text-milk-choco dark:text-milk-white mb-8 hover:text-milk-choco hover:font-medium transition-all duration-400"
         >
           <AiOutlineArrowLeft size={16} />

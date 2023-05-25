@@ -11,7 +11,7 @@ const About = () => {
       <main className="flex flex-col lg:flex-row gap-2 w-full h-full self-start">
         <div className="lg:flex-1">
           <h1 className="text-2xl lg:text-4xl font-medium text-milk-choco dark:text-white lg:mt-10">
-            this is <span className="text-milk-cyan">me.</span>
+            about <span className="text-milk-cyan">me.</span>
           </h1>
           <p className="text-milk-coffe dark:text-milk-white text-base lg:text-lg mt-5 leading-7 lg:leading-8">
             halo 👋,
@@ -20,12 +20,11 @@ const About = () => {
             <b>Universitas Ahmad Dahlan</b> (UAD) Yogyakarta. berfokus pada web
             development khususnya frontend development.
             <br /> senang belajar hal baru, practice makes perfect believer,
-            introvert, fans Detective Conan, pecinta semua sambal (yang penting
-            pedes).
+            fans Detective Conan, pecinta semua sambal (yang penting pedes).
             <br />
             memfokuskan diri di web development khususnya{" "}
-            <b>frontend developer</b> dan tahun ini bertujuan untuk menjadi{" "}
-            <b>fullstack developer</b>.
+            <b>frontend developer</b> dan di tahun 2023 ini saya bertujuan untuk
+            menjadi <b>fullstack developer</b>.
           </p>
         </div>
         <div className="object-cover self-center lg:flex-2">
